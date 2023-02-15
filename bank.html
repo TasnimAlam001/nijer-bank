@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/eef7a1c61e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-12">Jak, baper bank theke to nijer bank a aste parsi..</h1>
+    </header>
+    <main>
+        <section class="mt-12 w-3/4 mx-auto text-white">
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-blue-500 p-8 rounded">
+                    <h3 class="text-3xl font-semibold">Deposite</h3>
+                    <h3 class="text-5xl font-semibold">$<span id="total-deposit">00</span></h3>
+                </div>
+                <div class="bg-red-500 p-8 rounded">
+                    <h3 class="text-3xl font-semibold">Withdraw</h3>
+                    <h3 class="text-5xl font-semibold">$<span id="total-withdraw">00</span></h3>
+                </div>
+                <div class="bg-sky-500 p-8 rounded">
+                    <h3 class="text-3xl font-semibold">Balance</h3>
+                    <h3 class="text-5xl font-semibold">$<span id="total-amount">00</span></h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-12 w-3/4 mx-auto ">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-blue-800 p-8 rounded">
+                    <h2 class="text-3xl font-semibold text-white">Please enter the Amount</h2>
+                    <input id="inpt-deposit" class="block w-3/4 mx-3 p-3 mt-3 rounded" type="number" type="password"
+                        name="" placeholder="Enter the Deposite Amount">
+                    <button id="deposit-btn"
+                        class="bg-sky-500 px-5 py-3 mx-3 mt-3 font-bold hover:bg-red-600 text-white rounded-xl">Deposite</button>
+                </div>
+                <div class="bg-blue-800 p-8 rounded">
+                    <h2 class="text-3xl font-semibold text-white">Please enter the Amount</h2>
+                    <input id="withdraw-input" class="block w-3/4 mx-3 p-3 mt-3 rounded" type="number" type="password"
+                        placeholder="Enter the Withdraw Amount">
+                    <button id="withdraw-btn"
+                        class="bg-sky-500 px-5 py-3 mx-3 mt-3 font-bold hover:bg-red-600 text-white rounded-xl">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 w-3/4 mx-auto ">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-indigo-400 p-8 rounded">
+                    <div id="first" >
+                        <h2 class="text-3xl font-semibold text-white">Enter your favirout number from 1 to 100.</h2>
+                        <input id="bonus-input" class="block w-3/4 mx-3 p-3 mt-3 rounded" type="text" type="password"
+                            placeholder="Hint = Bolbo na, ja ichha daw... pore bujba">
+                        <button id="bonus-btn"
+                            class="bg-sky-500 px-5 py-3 mx-3 mt-3 font-bold hover:bg-red-600 text-white rounded-xl">Submit</button>
+                    </div>
+                    <div id="second" class="hidden">
+                        <p class="text-3xl mt-5"><span class="font-bold text-red-600">Congratulation.!! </span><br>  Your total Balance is increaged by <span
+                                id="incresed-p">00</span>%</p>
+                    </div>
+
+                </div>
+                <div class="bg-indigo-400 p-8 rounded">
+                    <div id="one" >
+                        <h2 class="text-3xl font-semibold text-white">Bap k 1 ta message lekho, maybe baper bank
+                            theke kisu tk peye jete paro.</h2>
+                        <input id="baper-msg" class="block w-3/4 mx-3 p-3 mt-3 rounded" type="text" placeholder="Hint = 'I Love You Bap'">
+                        <button id="bap-btn" class="bg-sky-500 px-5 py-3 mx-3 mt-3 font-bold hover:bg-red-600 text-white rounded-xl">Send
+                            to Bap</button>
+                    </div>
+                    <div id="two" class="hidden">
+                        <p class="text-3xl mt-5"><span class="font-bold text-red-600">Congratulation.!!! </span><br> Tomar Abbu jaan tomake <span class="font-bold text-red-600">500</span> Taka diyechen.!!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-sky-400 mt-12 w-3/4 mx-auto p-8">
+            <div class="border border-black bg-sky-300">
+                <div class="grid grid-cols-3 gap-x-6 w-11/12 mx-auto mt-3">
+                    <div>
+                        <button id="i-1" class="px-2"><i class="fa-solid fa-bold"></i></button>
+                        <button id="i-2" class="px-2"><i class="fa-solid fa-italic"></i></button>
+                        <button id="i-3" class="px-2"><i class="fa-solid fa-underline"></i></button>
+
+                    </div>
+                    <div>
+                        <button id="i-4" class="px-2"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="i-5" class="px-2"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="i-6" class="px-2"><i class="fa-solid fa-align-justify"></i></button>
+                        <button id="i-7" class="px-2"><i class="fa-solid fa-align-right"></i></button>
+
+                    </div>
+                    <div class="flex gap-3 text-center ml-20">
+                        <p>10</p>
+                        <p class="font-bold">aA</p>
+                    </div>
+
+                </div>
+                <hr class="border border-black w-11/12 mx-auto my-4 ">
+                <div class="mt-8 w-11/12 mx-auto">
+                    <textarea class="mx-4" name="" id="" cols="160" rows="20"></textarea>
+                </div>
+                <button id="cmnt-btn" class="bg-sky-500 px-5 py-3 mx-16 mb-3 mt-3 font-bold hover:bg-sky-800 text-white rounded-xl">Comment</button>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/bapKmsg.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+
+</html>
